@@ -1,0 +1,14 @@
+from pydantic import BaseSettings
+
+class Settings(BaseSettings):
+    DATABASE_URL: str = "postgresql+asyncpg://postgres:postgres@db:5432/user_service"
+    SECRET_KEY: str = "replace-this-with-a-secret"
+    ACCESS_TOKEN_EXPIRE_MINUTES: int = 60
+    ALGORITHM: str = "HS256"
+    HOST: str = "0.0.0.0"
+    PORT: int = 8000
+
+    class Config:
+        env_file = ".env"
+
+settings = Settings()
