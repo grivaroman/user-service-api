@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # User Service API
 
 Мини-сервис пользователей на FastAPI — регистрация, логин, профиль, JWT.
@@ -33,3 +34,7 @@ python -m app.db.init_db
 ## Примечания
 - Для простоты реализованы базовые функции без Alembic. Рекомендуется добавить миграции.
 - Токены — JWT. Для production смените SECRET_KEY и настройте HTTPS.
+=======
+# user-service-api
+The project replicates a real microservice
+>>>>>>> 2358737c5355beaae87efa0ebe604bc0d098a893
